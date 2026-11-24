@@ -2,3 +2,13 @@
 .venv/
 .streamlit/secrets.toml
 __pycache__/
+
+# Tugas terpisah, tidak ikut aplikasi TAS
+/fuzzy.py
+/pages/1_Inferensi_Fuzzy.py
+/docs/*Inferensi Fuzzy*
+/docs/*Inferensi_Fuzzy*
+
+# Berkas kuliah / laporan, bukan bagian aplikasi
+/Kuliah AI Streamlit.pdf
+/Progres1_TugasAI_Eben_672023109.pdf

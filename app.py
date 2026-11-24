@@ -43,7 +43,11 @@ def get_data(nama):
 
 # ---------- Train ----------
 if train:
-    X, y, target_names = get_data(dataset)
+    try:
+        X, y, target_names = get_data(dataset)
+    except Exception as e:
+        st.error(f"Gagal memuat dataset **{dataset}**: {e}")
+        st.stop()
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=test_size, random_state=random_state,
         stratify=y if jenis == "Klasifikasi" else None,
